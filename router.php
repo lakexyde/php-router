@@ -1,6 +1,7 @@
 <?php
 class Router {
   private $routes = array();
+  private $params = array();
   
   public function __construct(){}
   
@@ -40,6 +41,10 @@ class Router {
         return call_user_func_array($callback, array_values($params));
       }
     }
+  }
+  
+  private function convertToRegex($route){
+   // yet to be implemented
   }
 }
 ?>
