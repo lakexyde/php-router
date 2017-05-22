@@ -33,6 +33,10 @@ class Router {
     }
   }
   
+  public function map($method, $pattern, $callback){
+    //yet to be implemented
+  
+  }
   public function run($uri){
     $uri = $_GET['url'];
     foreach($this->routes as $pattern => $callback){
