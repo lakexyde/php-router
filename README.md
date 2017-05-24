@@ -1,5 +1,5 @@
 # php-router : A simple PHP router class
-This is a simple router class that uses regular expressions (regex) to map url parameters to a callback function. It is RESTFUL as it supports basically the magnificent four(4) **PHP Request Methods** which is also extensible.
+This is a simple router class that uses regular expressions (regex) to map url parameters to a callback function. It is RESTful as it supports basically the magnificent four(4) **PHP Request Methods** which is also extensible.
 
 ## Installation
 Copy the **router.php** file into your project's folder and require it in your **index.php** file.
