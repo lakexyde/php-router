@@ -18,25 +18,25 @@ $app = new Router();
 ```
 ### Route GET requests
 ```php
-$app->get('/\A\z/', function(){
+$app->get('', function(){
     echo "Homepage"; // prints "Homepage"
 });
 
-$app->get('/^blog\/(\w+)/', function($p){
+$app->get('blog/{p}', function($p){
     echo "Blog: $p"; // url: blog/posts prints "Blog: posts"
 });
 ```
 ### Same for other Request Methods
 ```php
-$app->post('/\A\z/', function(){
+$app->post('', function(){
     echo "Post Request"; // prints "Post Request" when you make a POST request to the homepage
 });
 
-$app->put('/\A\z/', function(){
+$app->put('', function(){
     echo "Put Request"; // prints "Put Request" when you make a PUT request to the homepage
 });
 
-$app->delete('/^posts\/(\d+)/', function($id){ // url: posts/1
+$app->delete('posts/{id}', function($id){ // url: posts/1
     echo "Deleted post with id: $id"; // prints "Deleted post with id: 1" when you make a posts request to the homepage
 });
 
@@ -48,6 +48,6 @@ $app->delete('/^posts\/(\d+)/', function($id){ // url: posts/1
 * [Slim Framework](http://www.slimframework.com/ "Slim Framework")
 
 ## TODO
-* Custome HTTP Request and Response class
-* Url pattern placeholders to replace RegEx. Example: /blog/{category}/{id}
+* Custom HTTP Request and Response class
+* Define parameters pattern
 
