@@ -50,4 +50,4 @@ $app->delete('posts/{id}', function($id){ // url: posts/1
 ## TODO
 * Custom HTTP Request and Response class
 * Define parameters pattern
-
+* Error handling
